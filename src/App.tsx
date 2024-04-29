@@ -1,15 +1,11 @@
 import { ThemeProvider } from "@/components/theme-provider"
-import { ModeToggle } from "./components/mode-toggle"
+import Header from "./components/header/Header"
 
 function App() {
   return (
     <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
-      <ModeToggle />
-      <div>
-        <h2 className="font-bold text-xl font-dmsans">Hello World</h2>
-        <h2 className="font-bold text-xl font-nova">Hello World</h2>
-        <h2 className="font-bold text-xl font-candal">Hello World</h2>
-        <h2 className="font-bold text-xl font-ubuntu">Hello World</h2>
+      <div className="pt-[4.75rem] lg:pt-[5.25rem] overflow-hidden">
+        <Header />
       </div>
     </ThemeProvider>
   )
