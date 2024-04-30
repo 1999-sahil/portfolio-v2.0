@@ -9,7 +9,7 @@ import { HamburgerMenu } from "../design/Header";
 function Header() {
   const pathname = useLocation();
 
-  const [openNavigation, setOpenNavigation] = useState(true);
+  const [openNavigation, setOpenNavigation] = useState(false);
 
   const toggleNavigation = () => {
     if (openNavigation) {
@@ -30,9 +30,9 @@ function Header() {
     `}
     >
       <div className="flex items-center px-5 lg:px-7.5 xl:px-10 max-lg:py-4">
-        <div className="bg-orange-500 flex">
+        <div className="flex">
           {/** logo name/image */}
-          <a href="" className="block xl:mr-8">
+          <a href="#" className="flex items-center xl:mr-8 font-bold text-xl font-ubuntu">
             Sahil Ahmed
           </a>
           
