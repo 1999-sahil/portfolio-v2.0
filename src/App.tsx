@@ -4,12 +4,14 @@ import Footer from "./components/footer/Footer"
 import MyWork from "./components/myWork/MyWork";
 import SubHero from "./components/SubHero";
 import Skills from "./components/Skills";
+import HeroSection from "./components/hero/HeroSection";
 
 function App() {
   return (
     <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
-      <div className="pt-[4.75rem] lg:pt-[5.25rem] overflow-hidden flex flex-col gap-20">
+      <div className="pt-[5rem] lg:pt-[6rem] overflow-hidden flex flex-col gap-20">
         <Header />
+        <HeroSection />
 
         <SubHero />
 

@@ -21,6 +21,7 @@ export const theme = {
       ubuntu: ["Ubuntu", "sans-serif"],
       candal: ["Candal", "sans-serif"],
       nova: ["Nova Flat", "system-ui"],
+      jersey: ["Jersey 15", "sans-serif"],
     },
     colors: {
       color: {
