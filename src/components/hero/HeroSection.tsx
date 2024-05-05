@@ -9,45 +9,45 @@ import ReactDev from "../design/ReactDev";
 
 function HeroSection() {
   return (
-    <div className="gridBackground w-full h-screen flex flex-col items-center">
+    <div className="gridBackground w-full h-screen flex flex-col gap-5">
       {/** name */}
-      <div className="flex items-center justify-center w-fit mt-10 mb-3 px-3 py-1 md:px-4 md:py-1.5 rounded-md bg-yellow-400">
-        <h2 className="font-bold text-base md:text-lg font-dmsans text-black">
+      <div className="flex items-center justify-center mt-5">
+        <h2 className="font-bold text-base md:text-lg font-dmsans bg-gradient-to-r from-yellow-400 to-orange-400 text-black px-3 py-1 md:px-4 md:py-1.5 rounded-md">
           Hey, I'm Sahil...
         </h2>
       </div>
 
       {/** title */}
-      <div className="flex items-center justify-center gap-2 mb-8 text-xl lg:text-3xl md:text-2xl font-candal font-black">
+      <div className="flex items-center justify-center gap-2 text-2xl lg:text-4xl md:text-3xl font-candal font-black">
         <h2 className="">A</h2>
         <h2 className="underline">Software Engineer</h2>
       </div>
 
-      <h2 className="text-center font-nova font-bold mb-2 md:text-lg">who</h2>
+      <h2 className="text-center font-nova font-bold text-xl lgtext-3xl">who</h2>
 
-      <div className="w-full flex items-center justify-center mb-10 md:mb-16 mx-auto">
-        <h2 className="font-jersey text-2xl md:text-3xl lg:text-5xl font-black text-center m-auto">
+      <div className="w-full flex items-center justify-center mx-auto">
+        <h2 className="font-jersey text-4xl md:text-6xl lg:mx-5 font-black text-center m-auto text-wrap">
           <strong className="">Craft</strong>{" "}
-          <strong className="text-purple-700">Digital Naratives</strong> With{" "}
-          <strong className="text-emerald-600">Artistic Precision</strong>
+          <strong className="text-purple-700 dark:text-purple-600">Digital Naratives</strong> With{" "}
+          <strong className="text-emerald-600 dark:text-emerald-500">Artistic Precision</strong>
         </h2>
       </div>
 
       {/** design */}
-      <div className="containerGridBg flex items-center justify-center relative w-full h-[30%] lg:h-[45%] bg-[#fffdd0] mr-20 rounded-r-full mt-14">
-        <div className="w-fit absolute -right-4 top-20">
+      <div className="containerGridBg flex items-center justify-center mt-12 md:mt-4 xl:mt-4 relative w-[90%] lg:w-[80%] h-[40%] bg-[#fffcc1] dark:bg-[#f5f2c6] rounded-r-full">
+        <div className="w-fit absolute -right-4 top-16">
           <UiDesign />
         </div>
-        <div className="w-fit absolute bottom-3 left-14 md:left-20 md:-bottom-4 lg:left-[5%]">
+        <div className="w-fit absolute bottom-3 left-6 md:left-20 md:-bottom-4 lg:left-[5%]">
           <Frontend />
         </div>
-        <div className="w-fit absolute left-12 -top-2 md:left-20 md:-top-6 lg:left-[10%]">
+        <div className="w-fit absolute left-5 -top-2 md:left-20 md:-top-6 lg:left-[10%]">
           <UiDev />
         </div>
-        <div className="w-fit absolute -bottom-4 right-14 lg:right-[10%] lg:-bottom-8">
+        <div className="w-fit absolute -bottom-2 right-10 lg:right-[10%] lg:-bottom-8">
           <WebDev />
         </div>
-        <div className="w-fit absolute right-24 top-3 md:right-[20%] md:top-1 lg:-top-6">
+        <div className="w-fit absolute right-24 top-1 md:right-[20%] md:top-1 lg:-top-6">
           <ReactDev />
         </div>
         <div className="w-fit absolute">
@@ -57,7 +57,7 @@ function HeroSection() {
           </button>
         </div>
         {/** web */}
-        <div className="w-fit absolute left-16 top-10 md:left-[30%]">
+        <div className="w-fit absolute left-12 top-14 md:left-[10%]">
           <div className="bg-black rounded-full p-1">
             <svg
               version="1.1"

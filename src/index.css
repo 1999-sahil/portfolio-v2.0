@@ -10,12 +10,11 @@
   scroll-behavior: smooth;
 }
 
-.dark {
-  --icon-color: #fff; /* Fill color for dark mode */
-}
-
 .light {
   --icon-color: #000; /* Fill color for light mode */
+  --nameStrike-color: #ffd800;
+  --grid-lines-color: #c2c1c1;
+  --container-grid-lines-color: #71797e;
 }
 
 
@@ -80,6 +79,10 @@
     --border: 240 3.7% 15.9%;
     --input: 240 3.7% 15.9%;
     --ring: 240 4.9% 83.9%;
+
+    --nameStrike-color: #000;
+    --grid-lines-color: #71797e;
+    --container-grid-lines-color: #899499;
   }
 }
 
@@ -167,13 +170,45 @@
 .gridBackground {
   background-size: 50px 50px;
   background-image: 
-    linear-gradient(to right, #c2c1c1, 1px, transparent 1px),
-    linear-gradient(to bottom, #c2c1c1, 1px, transparent 1px);
+    linear-gradient(to right, var(--grid-lines-color), 1px, transparent 8px),
+    linear-gradient(to bottom, var(--grid-lines-color), 1px, transparent 8px);
+}
+
+@media (prefers-color-scheme: dark) {
+  .gridBackground {
+    background-image: 
+    linear-gradient(to right, var(--grid-lines-color), 1px, transparent 8px),
+    linear-gradient(to bottom, var(--grid-lines-color), 1px, transparent 8px);
+  }
 }
 
 .containerGridBg {
-  background-size: 10px 10px;
+  background-size: 15px 15px;
   background-image: 
-    linear-gradient(to right, #c2c1c1, 0.2px, transparent 1px),
-    linear-gradient(to bottom, #c2c1c1, 0.2px, transparent 1px);
+    linear-gradient(to right, var(--container-grid-lines-color), 0.2px, transparent 1px),
+    linear-gradient(to bottom, var(--container-grid-lines-color), 0.2px, transparent 1px);
+}
+
+.name-strike {
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+}
+
+.name-strike::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 8px;
+  background-color: #ffd700;
+  position: absolute;
+  bottom: 8%;
+  z-index: -1;
+}
+
+@media (prefers-color-scheme: dark) {
+  /* Dark mode background color */
+  .name-strike::after {
+    background-color: var(--nameStrike-color); /* Specify your desired dark mode background color here */
+  }
 }

@@ -6,18 +6,23 @@ import SubHero from "./components/SubHero";
 import Skills from "./components/Skills";
 import HeroSection from "./components/hero/HeroSection";
 
+// pt-[5rem] lg:pt-[6rem] overflow-hidden 
+
 function App() {
   return (
     <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
-      <div className="pt-[5rem] lg:pt-[6rem] overflow-hidden flex flex-col gap-20">
+      <div className="overflow-hidden">
         <Header />
+
         <HeroSection />
 
         <SubHero />
 
         <Skills />
 
-        <MyWork />
+        <div className="">
+          <MyWork />
+        </div>
 
         <Footer />
       </div>

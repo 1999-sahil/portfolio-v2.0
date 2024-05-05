@@ -4,7 +4,7 @@ import Hero from "./hero/Hero";
 
 function SubHero() {
   return (
-    <div className="relative flex items-center justify-center">
+    <div className="relative flex items-center justify-center my-20">
           <img src={LightModeBgImage} alt="bg" className="relative dark:hidden block max-w-full h-auto overflow-clip" />
           <img src={DarkModeBgImage} alt="bg" className="hidden dark:block relative max-w-full h-auto overflow-clip" />
 

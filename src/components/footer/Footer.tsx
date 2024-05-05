@@ -4,13 +4,13 @@ import { RiNotionFill } from 'react-icons/ri';
 
 function Footer() {
     return (
-        <footer className="">
+        <footer className="mt-20">
             {/** title */}
             <div className="flex items-center justify-center mb-[3rem] gap-2">
                 <div className="shake">
-                    <PhoneCall className="shake-icon w-12 h-12 lg:w-16 lg:h-16 -rotate-12 text-green-600 drop-shadow-lg" />
+                    <PhoneCall className="shake-icon w-12 h-12 lg:w-16 lg:h-16 -rotate-12 text-green-600 dark:text-white drop-shadow-lg" />
                 </div>
-                <h2 className="font-black font-candal rotate-6 text-3xl lg:text-4xl text-[#12372a] dark:text-gray-100">Connect With Me</h2>
+                <h2 className="font-black font-candal rotate-6 text-3xl lg:text-4xl text-[#12372a] dark:text-[#ffd800]">Connect With Me</h2>
             </div>
 
             {/** social icons */}
@@ -51,7 +51,7 @@ function Footer() {
             </div>
 
             {/** lowest gradient div */}
-            <div className="w-full h-[2px] bg-gradient-to-l from-orange-600 via-pink-600 to-blue-700"></div>
+            <div className="w-full h-[2px] bg-gradient-to-l from-orange-600 via-pink-600 to-yellow-400"></div>
         </footer>
     )
 }
