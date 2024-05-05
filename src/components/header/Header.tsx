@@ -51,7 +51,7 @@ function Header() {
                 />
               </g>
           </svg>
-          <h2 className="lg:flex hidden w-fit font-nova dark:text-gray-100 font-semibold text-2xl name-strike">
+          <h2 className="lg:flex hidden w-fit font-nova dark:text-black font-semibold text-2xl name-strike">
             SahilA.
           </h2>
         </div>

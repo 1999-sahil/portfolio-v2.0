@@ -3,6 +3,7 @@ import DarkFeaturedProjectImage from "../../assets/documents-dark.png";
 import RightArrowImage from "../../assets/right-side-arrow.webp";
 
 function MyWork() {
+
     return (
         <div className="relative mt-[650px] md:mt-[280px] lg:mt-[60px]">
             <h2 className="font-black font-candal text-5xl lg:text-4xl text-[#12372a] dark:text-[#ffd800] text-center mb-10 w-full">My Work</h2>
@@ -41,6 +42,7 @@ function MyWork() {
                     <img src={DarkFeaturedProjectImage} alt="" className="w-[400px] h-[400px] lg:w-[500px] lg:h-[500px] hidden dark:block object-contain" />
                 </div>
             </div>
+            
         </div>
 
     )

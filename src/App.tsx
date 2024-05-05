@@ -5,6 +5,7 @@ import MyWork from "./components/myWork/MyWork";
 import SubHero from "./components/SubHero";
 import Skills from "./components/Skills";
 import HeroSection from "./components/hero/HeroSection";
+import Carousel from "./components/carousel/Carousel";
 
 // pt-[5rem] lg:pt-[6rem] overflow-hidden 
 
@@ -20,9 +21,9 @@ function App() {
 
         <Skills />
 
-        <div className="">
-          <MyWork />
-        </div>
+        <MyWork />
+
+        <Carousel />
 
         <Footer />
       </div>

@@ -8,9 +8,8 @@
               width="100px"
               height="100px"
               fill="#ffd800"
-              className="bg-white p-[2px] rounded-lg"
               viewBox="0 0 377.343 377.343"
-              //style="enable-background:new 0 0 377.343 377.343;"
+              style="enable-background:new 0 0 377.343 377.343;"
               xmlSpace="preserve"
             >
               <g>

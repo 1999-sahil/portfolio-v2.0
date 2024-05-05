@@ -52,3 +52,21 @@ export const mobileLinkVars = {
         },
     },
 };
+
+export const hoverCard = {
+    initial: {
+        opacity: 0,
+    },
+    animate: {
+        opacity: 1,
+    },
+    exit: {
+        opacity: 0,
+    },
+};
+
+export const hoverCardH1 = {
+    initial: { y: 10 },
+    animate: { y: 0 },
+    exit: { y: 10 },
+}
