@@ -13,7 +13,7 @@ function SkillCard({ image, title }: CardProp) {
 
     return (
         <motion.div 
-            className="relative border overflow-hidden min-w-[120px] h-[120px] lg:min-w-[150px] lg:h-[150px] bg-slate-100 dark:bg-gray-700 rounded-md flex items-center justify-center"
+            className="relative border overflow-hidden min-w-[120px] h-[120px] p-5 bg-slate-100 dark:bg-white/35 rounded-md flex items-center justify-center"
             onHoverStart={() => setShowOverlay(true)}
             onHoverEnd={() => setShowOverlay(false)}
         >

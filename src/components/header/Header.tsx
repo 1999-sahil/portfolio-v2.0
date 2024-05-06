@@ -8,6 +8,8 @@ import { containerVars, menuVars } from "@/constants/motion";
 import { X } from "lucide-react";
 import { RiMenu3Fill } from "react-icons/ri";
 import NavLink from "../design/NavLink";
+import { FiExternalLink } from "react-icons/fi";
+import { Link } from "react-router-dom";
 
 function Header() {
 
@@ -20,7 +22,7 @@ function Header() {
   return (
     <header className="dark:bg-[#ffd700]">
       <nav className="flex justify-between items-center py-6 px-2 lg:px-7 border-b">
-        <div className="flex items-center ml-5 gap-1">
+        <Link to="/" className="flex items-center ml-5 gap-1">
           <svg
               version="1.1"
               id="Capa_1"
@@ -54,7 +56,7 @@ function Header() {
           <h2 className="lg:flex hidden w-fit font-nova dark:text-black font-semibold text-2xl name-strike">
             SahilA.
           </h2>
-        </div>
+        </Link>
 
         {/** nav link desktop */}
         <div className="lg:flex hidden gap-8">
@@ -150,6 +152,12 @@ function Header() {
                   </div>
                 );
               })}
+              {/** resume */}
+              <button className="flex items-center justify-center gap-2 font-bold text-3xl font-candal py-4 bg-black text-[#ffd800] w-full rounded-lg hover:bg-opacity-90">
+                Resume
+                <FiExternalLink />
+              </button>
+              
             </motion.div>
           </div>
         </motion.div>

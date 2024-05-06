@@ -4,37 +4,68 @@ import UiDesign from "../design/UiDesign";
 import UiDev from "../design/UiDev";
 import WebDev from "../design/WebDev";
 import ReactDev from "../design/ReactDev";
-
-// w-fit flex items-center justify-center absolute top-16 left-20 ml-12 mt-5 md:left-[35%] lg:left-[40%] lg:top-[30%]
+import { motion } from "framer-motion";
 
 function HeroSection() {
   return (
-    <div className="gridBackground w-full h-screen flex flex-col gap-5">
-      {/** name */}
-      <div className="flex items-center justify-center mt-5">
-        <h2 className="font-bold text-base md:text-lg font-dmsans bg-gradient-to-r from-yellow-400 to-orange-400 text-black px-3 py-1 md:px-4 md:py-1.5 rounded-md">
-          Hey, I'm Sahil...
+    <div className="gridBackground w-full h-screen flex flex-col py-12 justify-between">
+      <motion.div
+        variants={{
+          hidden: { opacity: 0, y: 75 },
+          visible: { opacity: 1, y: 0 },
+        }}
+        initial="hidden"
+        animate="visible"
+        transition={{
+          duration: 0.5,
+          delay: 0.25,
+        }}
+        className="flex flex-col gap-5 h-fit"
+      >
+        {/** name */}
+        <div className="flex items-center justify-center">
+          <h2 className="font-bold text-base md:text-lg font-dmsans bg-gradient-to-r from-yellow-400 to-orange-400 text-black px-3 py-1 md:px-4 md:py-1.5 rounded-md">
+            Hey, I'm Sahil...
+          </h2>
+        </div>
+
+        {/** title */}
+        <div className="flex items-center justify-center gap-2 text-2xl lg:text-4xl md:text-3xl font-candal font-black">
+          <h2 className="">A</h2>
+          <h2 className="underline">Software Engineer</h2>
+        </div>
+
+        <h2 className="text-center font-nova font-bold text-xl lgtext-3xl">
+          who
         </h2>
-      </div>
 
-      {/** title */}
-      <div className="flex items-center justify-center gap-2 text-2xl lg:text-4xl md:text-3xl font-candal font-black">
-        <h2 className="">A</h2>
-        <h2 className="underline">Software Engineer</h2>
-      </div>
-
-      <h2 className="text-center font-nova font-bold text-xl lgtext-3xl">who</h2>
-
-      <div className="w-full flex items-center justify-center mx-auto">
-        <h2 className="font-jersey text-4xl md:text-6xl lg:mx-5 font-black text-center m-auto text-wrap">
-          <strong className="">Craft</strong>{" "}
-          <strong className="text-purple-700 dark:text-purple-600">Digital Naratives</strong> With{" "}
-          <strong className="text-emerald-600 dark:text-emerald-500">Artistic Precision</strong>
-        </h2>
-      </div>
+        <div className="w-full flex items-center justify-center mx-auto">
+          <h2 className="font-jersey text-4xl md:text-6xl lg:mx-5 font-black text-center m-auto text-wrap">
+            <strong className="">Craft</strong>{" "}
+            <strong className="text-purple-700 dark:text-purple-600">
+              Digital Naratives
+            </strong>{" "}
+            With{" "}
+            <strong className="text-emerald-600 dark:text-emerald-500">
+              Artistic Precision
+            </strong>
+          </h2>
+        </div>
+      </motion.div>
 
       {/** design */}
-      <div className="containerGridBg flex items-center justify-center mt-12 md:mt-4 xl:mt-4 relative w-[90%] lg:w-[80%] h-[40%] bg-[#fffcc1] dark:bg-[#f5f2c6] rounded-r-full">
+      <motion.div
+        variants={{
+          hidden: { opacity: 0, x: -75 },
+          visible: { opacity: 1, x: 0 },
+        }}
+        initial="hidden"
+        animate="visible"
+        transition={{
+          duration: 2,
+          //delay: 0.35,
+        }}
+        className="containerGridBg flex items-center justify-center mt-12 md:mt-4 xl:mt-4 relative w-[90%] lg:w-[80%] h-[40%] bg-[#fffcc1] dark:bg-[#f5f2c6] rounded-r-full">
         <div className="w-fit absolute -right-4 top-16">
           <UiDesign />
         </div>
@@ -113,7 +144,7 @@ function HeroSection() {
             />
           </svg>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 }

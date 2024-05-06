@@ -1,10 +1,10 @@
+import { svg } from "@/constants/svg";
 import { animate, useMotionValue, motion } from "framer-motion";
 import { useEffect, useState } from "react";
-import SkillCard from "./SkillCard";
-import { svg } from "@/constants/svg";
 import useMeasure from "react-use-measure";
+import SkillCard from "./SkillCard";
 
-function Carousel() {
+function Carousel2() {
     let [ref, { width }] =useMeasure();
 
     const xTranslation = useMotionValue(0);
@@ -20,19 +20,19 @@ function Carousel() {
     useEffect(() => {
         let controls;
 
-        const finalPosition = -width / 2;
+        const finalPosition = width / 2;
 
         if(mustFinish) {
             controls = animate(xTranslation, [xTranslation, [xTranslation.get(), finalPosition]], {
                 ease: "linear",
-                duration: duration * (1 - xTranslation.get() / finalPosition),
+                duration: duration * (1 + xTranslation.get() / finalPosition),
                 onComplete: () => {
                     setMustFinish(false);
                     setReRender(!reRender);
                 }
             })
         } else {
-            controls = animate(xTranslation, [0, finalPosition], {
+            controls = animate(xTranslation, [-finalPosition, 0], {
                 ease: "linear",
                 duration: duration,
                 repeat: Infinity,
@@ -45,7 +45,7 @@ function Carousel() {
     }, [xTranslation, width, duration, reRender]);
 
   return (
-    <main className="">
+    <div className="">
         <motion.div 
                 className="flex gap-1" 
                 ref={ref} 
@@ -67,8 +67,8 @@ function Carousel() {
                     />
                 ))}
             </motion.div>
-    </main>
+    </div>
   )
 }
 
-export default Carousel
+export default Carousel2
