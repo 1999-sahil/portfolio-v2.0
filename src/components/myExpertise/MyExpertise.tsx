@@ -7,7 +7,7 @@ import FourthBlockImg from "../../assets/block4.svg"
 function MyExpertise() {
     return (
         <div className="w-full">
-            <h2 className="font-black font-candal text-5xl lg:text-4xl text-[#12372a] dark:text-yellow-400 text-center mb-16 w-full">My Expertise</h2>
+            <h2 className="font-black font-candal text-5xl lg:text-4xl text-[#12372a] dark:text-yellow-400 text-center mb-16 w-full px-2">My Expertise</h2>
 
             {/** blocks */}
             <div className="grid w-full h-auto px-[1rem] lg:px-0 lg:grid-flow-col grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[1rem] md:gap-[2px]">

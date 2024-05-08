@@ -1,18 +1,18 @@
 import { Link } from "react-router-dom";
 
-interface Link {
-    id: string;
-    title: string;
-    href: string;
+type Props = {
+  id: string;
+  title: string;
+  to: string;
 }
 
-function NavLink({ id, title, href }: Link) {
+const NavLink = ({ id, title, to }: Props) => {
   return (
-    <div>
-        <Link to={href} className="">
-            <h2 className="text-end font-bold font-dmsans text-[#333] dark:text-black text-xs">{id}</h2>
-            <h2 className="font-nova font-semibold capitalize text-[#333] dark:text-black text-base">{title}</h2>
-        </Link>
+    <div className="bg-red-400">
+      <Link to={to} className="text-white">
+        <h2>{id}</h2>
+        <h2>{title}</h2>
+      </Link>
     </div>
   )
 }

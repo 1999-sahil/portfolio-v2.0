@@ -10,13 +10,14 @@ import Work from './pages/Work.tsx'
 import Experience from './pages/Experience.tsx'
 import Resume from './pages/Resume.tsx'
 import About from './pages/About.tsx'
-import Header from './components/header/Header.tsx'
+//import Header from './components/header/Header.tsx'
+import Navbar from './components/navbar/Navbar.tsx'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <ThemeProvider defaultTheme="light" storageKey="vite-ui-theme">
       <Router>
-        <Header />
+        <Navbar />
         <Routes>
           <Route path="/" element={<App />} />
           <Route path="/about" element={<About />} />

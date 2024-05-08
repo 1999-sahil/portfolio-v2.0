@@ -2,18 +2,18 @@ import { mobileLinkVars } from "@/constants/motion";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
-interface NavLink {
-    title: string;
-    href: string;
+interface MobileNavLinkProps {
+  title: string;
+  to: string;
 }
 
-function MobileNavLink({ title, href }: NavLink) {
+function MobileNavLink({ title, to }: MobileNavLinkProps) {
   return (
     <motion.div
       variants={mobileLinkVars}
-      className="text-3xl uppercase font-candal font-bold"
+      className=""
     >
-      <Link to={href} className="">{title}</Link>
+      <Link to={to} className="text-white font-mukta text-3xl font-semibold uppercase">{title}</Link>
     </motion.div>
   )
 }

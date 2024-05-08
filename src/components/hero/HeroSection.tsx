@@ -30,7 +30,7 @@ function HeroSection() {
         </div>
 
         {/** title */}
-        <div className="flex items-center justify-center gap-2 text-2xl lg:text-4xl md:text-3xl font-candal font-black">
+        <div className="flex items-center justify-center gap-2 text-2xl lg:text-4xl md:text-3xl font-jersey font-black">
           <h2 className="">A</h2>
           <h2 className="underline">Software Engineer</h2>
         </div>
@@ -39,8 +39,8 @@ function HeroSection() {
           who
         </h2>
 
-        <div className="w-full flex items-center justify-center mx-auto">
-          <h2 className="font-jersey text-4xl md:text-6xl lg:mx-5 font-black text-center m-auto text-wrap">
+        <div className="w-full flex items-center justify-center mx-auto px-px">
+          <h2 className="font-candal text-4xl md:text-6xl lg:mx-5 font-black text-center m-auto text-wrap">
             <strong className="">Craft</strong>{" "}
             <strong className="text-purple-700 dark:text-purple-600">
               Digital Naratives

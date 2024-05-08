@@ -17,11 +17,12 @@ export const theme = {
   },
   extend: {
     fontFamily: {
-      dmsans: ["DM Sans", "sans-serif"],
-      ubuntu: ["Ubuntu", "sans-serif"],
+      roboto: ["Roboto", "sans-serif"],
+      kristi: ["Kristi", "cursive"],
       candal: ["Candal", "sans-serif"],
-      nova: ["Nova Flat", "system-ui"],
-      jersey: ["Jersey 15", "sans-serif"],
+      kalam: ["Kalam", "cursive"],
+      jersey: ["Jersey 10", "sans-serif"],
+      mukta: ["Mukta", "sans-serif"],
     },
     colors: {
       color: {
