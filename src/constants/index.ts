@@ -1,3 +1,12 @@
+import { Monitor } from "lucide-react";
+import { FaReact } from "react-icons/fa";
+import { PencilRuler } from "lucide-react";
+
+export const expertise = [
+  { icon: Monitor, title: "Software Development", desc: "experienced in object oriented programming: java, javascript, typescript." },
+  { icon: FaReact, title: "Frontend ReactJs, NextJs", desc: "passionate about ui/ux. Development experience in html, css, js, react and Nextjs frameworks." },
+  { icon: PencilRuler, title: "User Interface, UI Developer", desc: "hands-on experience developing attractive user interfaces using bootstrap, tailwind css, shadcn, materialUI, figma." },
+];
 
 export const MobileNavigation = [
   { title: "home", href: "/" },

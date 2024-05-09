@@ -251,3 +251,21 @@
   border-color: red transparent transparent transparent;
   border-radius: 50%;
 }
+
+.better-strike {
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+}
+
+.better-strike::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: #ba12d8;
+  position: absolute;
+  bottom: -50%;
+  z-index: -1;
+  border-radius: 50%;
+}

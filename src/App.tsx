@@ -16,6 +16,7 @@ import Frontend from "./components/design/Frontend";
 import UiDesign from "./components/design/UiDesign";
 import ReactDev from "./components/design/ReactDev";
 import WebDev from "./components/design/WebDev";
+import MySkills from "./components/myExpertise/MySkills";
 
 function App() {
   const ref = useRef(null);
@@ -119,7 +120,9 @@ function App() {
       </section>
 
       {/** my expertise */}
-      <section>expertise</section>
+      <section className="w-full h-screen my-28">
+        <MySkills />
+      </section>
     </main>
   );
 }
