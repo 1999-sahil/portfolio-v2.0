@@ -1,14 +1,14 @@
-import Footer from "./components/footer/Footer";
-import HeroSection from "./components/hero/HeroSection";
-import SubHero from "./components/SubHero";
-import Skills from "./components/Skills";
-import MyWork from "./components/myWork/MyWork";
-import Carousel from "./components/carousel/Carousel";
-import Carousel2 from "./components/carousel/Carousel2";
+//import Footer from "./components/footer/Footer";
+//import HeroSection from "./components/hero/HeroSection";
+//import SubHero from "./components/SubHero";
+//import Skills from "./components/Skills";
+//import MyWork from "./components/myWork/MyWork";
+//import Carousel from "./components/carousel/Carousel";
+//import Carousel2 from "./components/carousel/Carousel2";
 import { useEffect, useRef } from "react";
 import { useAnimation, useInView } from "framer-motion";
-import { PanelBottomClose } from "lucide-react";
-import Navbar from "./components/navbar/Navbar";
+//import { PanelBottomClose } from "lucide-react";
+//import Navbar from "./components/navbar/Navbar";
 import HeroBanner from "./components/banner/HeroBanner";
 import { GoDotFill } from "react-icons/go";
 import UiDev from "./components/design/UiDev";
@@ -19,6 +19,9 @@ import WebDev from "./components/design/WebDev";
 import MySkills from "./components/myExpertise/MySkills";
 import Projects from "./components/myWork/Projects";
 import About from "./components/about/About";
+import TechSkill from "./components/design/TechSkill";
+import LightSVG from "./assets/lightArrow.svg";
+import DarkSVG from "./assets/darkArrow.svg";
 
 function App() {
   const ref = useRef(null);
@@ -134,6 +137,21 @@ function App() {
       {/** about me section */}
       <section className="w-full h-full mb-20">
         <About />
+      </section>
+
+      {/** skills section */}
+      <section className="w-full h-full mb-20">
+        <TechSkill />
+      </section>
+
+      {/** arrow */}
+      <section className="w-full h-full mb-20 flex items-center justify-center">
+        <div className="flex dark:hidden">
+          <img src={LightSVG} alt="" />
+        </div>
+        <div className="hidden dark:flex">
+          <img src={DarkSVG} alt="" />
+        </div>
       </section>
     </main>
   );
