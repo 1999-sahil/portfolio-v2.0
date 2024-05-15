@@ -17,6 +17,8 @@ import UiDesign from "./components/design/UiDesign";
 import ReactDev from "./components/design/ReactDev";
 import WebDev from "./components/design/WebDev";
 import MySkills from "./components/myExpertise/MySkills";
+import Projects from "./components/myWork/Projects";
+import About from "./components/about/About";
 
 function App() {
   const ref = useRef(null);
@@ -120,8 +122,18 @@ function App() {
       </section>
 
       {/** my expertise */}
-      <section className="w-full h-screen my-28">
+      <section className="w-full h-full my-28">
         <MySkills />
+      </section>
+
+      {/** projects section */}
+      <section className="w-full h-full mb-20">
+        <Projects />
+      </section>
+
+      {/** about me section */}
+      <section className="w-full h-full mb-20">
+        <About />
       </section>
     </main>
   );
