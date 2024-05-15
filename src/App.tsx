@@ -1,14 +1,5 @@
-//import Footer from "./components/footer/Footer";
-//import HeroSection from "./components/hero/HeroSection";
-//import SubHero from "./components/SubHero";
-//import Skills from "./components/Skills";
-//import MyWork from "./components/myWork/MyWork";
-//import Carousel from "./components/carousel/Carousel";
-//import Carousel2 from "./components/carousel/Carousel2";
 import { useEffect, useRef } from "react";
 import { useAnimation, useInView } from "framer-motion";
-//import { PanelBottomClose } from "lucide-react";
-//import Navbar from "./components/navbar/Navbar";
 import HeroBanner from "./components/banner/HeroBanner";
 import { GoDotFill } from "react-icons/go";
 import UiDev from "./components/design/UiDev";
@@ -22,6 +13,7 @@ import About from "./components/about/About";
 import TechSkill from "./components/design/TechSkill";
 import LightSVG from "./assets/lightArrow.svg";
 import DarkSVG from "./assets/darkArrow.svg";
+import Footer from "./components/footer/Footer";
 
 function App() {
   const ref = useRef(null);
@@ -153,34 +145,15 @@ function App() {
           <img src={DarkSVG} alt="" />
         </div>
       </section>
+
+      {/** footer */}
+      <section className="w-full h-full">
+        <Footer />
+      </section>
+
     </main>
   );
 }
 
 export default App;
 
-{
-  /**
-<HeroSection />
-
-        <SubHero />
-
-        <Skills />
-
-        <MyWork />
-
-        <div className="mt-20 mb-10 flex items-center justify-center">
-          <div className="border-2 border-solid border-black dark:border-yellow-400 dark:bg-black dark:text-yellow-400 bg-yellow-400 rounded-lg px-6 py-1.5 lg:px-8 lg:py-2 flex items-center gap-2 font-candal font-black text-xl lg:text-2xl">
-            Technical Skills
-            <PanelBottomClose className="w-8 h-8" />
-          </div>
-        </div>
-
-        <div className="carousel py-10 flex flex-col gap-4 border-b border-t">
-          <Carousel />
-          <Carousel2 />
-        </div>
-
-        <Footer />
- */
-}
