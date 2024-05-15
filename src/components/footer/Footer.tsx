@@ -104,7 +104,7 @@ function Footer() {
                 <div className="mx-5 mt-4 mb-2 flex justify-between">
                     <div className="flex flex-col gap-1">
                         <h2 className="text-lg text-center font-kristi bg-black dark:border dark:border-white px-5 py-[1px] rounded-full text-white">--------- Sahil Ahmed ---------</h2>
-                        <h2 className="flex text-base gap-[2px] font-mukta font-semibold">
+                        <h2 className="flex text-sm gap-[2px] font-mukta font-semibold">
                             <RiCopyrightLine />
                             All Rights Reserves. @2024
                         </h2>
