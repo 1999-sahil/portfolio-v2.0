@@ -15,7 +15,7 @@ import Navbar from './components/navbar/Navbar.tsx'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <ThemeProvider defaultTheme="light" storageKey="vite-ui-theme">
+    <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
       <Router>
         <Navbar />
         <Routes>

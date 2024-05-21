@@ -53,7 +53,7 @@ function App() {
             Close
           </div>
         </div>
-        <div className="bg-gray-200 dark:bg-[#121212] w-full h-[93%] lg:h-[96%] rounded-xl relative m-auto">
+        <div className="bg-gray-100 dark:bg-[#121212] w-full h-[93%] lg:h-[96%] rounded-xl relative m-auto">
           <div className="absolute w-full h-full">
             <div className="absolute top-[5%] left-[5%]">
               <UiDev />
@@ -139,12 +139,15 @@ function App() {
       </section>
 
       {/** my approach card */}
-      <section className="w-full h-full mb-20">
-        <div className="flex items-center justify-center">
-          <h2 className="flex items-center gap-2 text-sky-600 bg-[#b2b377] font-medium whitespace-nowrap font-roboto text-[18px] md:text-[22px] w-fit px-2 py-1 rounded-[.5rem] text-center">
+      <section className="w-full h-full">
+        <div className="flex flex-col items-center justify-center m-2">
+          <h2 className="flex items-center gap-2 mb-12  text-orange-600 bg-[#f9bf54] dark:bg-[#f5deb3] font-medium whitespace-nowrap font-roboto text-[18px] md:text-[22px] w-fit px-2 py-1 rounded-[.5rem] text-center">
             <FaCodeBranch />
             My Approach
           </h2>
+          <h2 className="text-center text-[1.62rem] lg:text-[2.5rem] text-[#333] dark:text-[#e3e3e3] leading-8 md:leading-[50px] font-candal font-medium">
+            Plug and <span className="bg-orange-500 text-[#f5deb3] px-1">play</span> with your workflow
+            </h2>
         </div>
         <div>
           <CardRevealEffect />

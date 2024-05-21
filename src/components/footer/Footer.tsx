@@ -13,7 +13,7 @@ function Footer() {
         <footer>
             {/** small devices */}
             <div className="flex flex-col gap-2 lg:hidden mx-3">
-                <div className="border-t border-b py-8 border-[#003c43] w-full flex flex-col items-center justify-center gap-5">
+                <div className="border-t border-b py-8 border-[#003c43] dark:border-[#757575] w-full flex flex-col items-center justify-center gap-5">
                     {/** text */}
                     <div className="">
                         <h2 className="text-lg font-roboto font-medium">Let&apos;s connect for discussion</h2>
@@ -29,14 +29,14 @@ function Footer() {
                     </div>
                 </div>
 
-                <div className="border-t border-b border-[#003c43] py-8 w-full flex items-center justify-center">
-                    <div className="border-2 border-[#003c43] border-dashed rounded-md -rotate-6 hover:rotate-6 hover:bg-[#e3e3e3] p-2 bg-yellow-300">
+                <div className="border-t border-b border-[#003c43] dark:border-[#757575] py-8 w-full flex items-center justify-center">
+                    <div className="border-2 border-[#003c43] dark:border-red-500 border-dashed rounded-md -rotate-6 hover:rotate-6 hover:bg-[#e3e3e3] p-2 bg-yellow-300">
                         <img src={Gmail} alt="" className="w-[80px] h-[80px]" />
                     </div>
-                    <div className="border-2 border-[#003c43] border-solid rounded-md rotate-12 hover:rotate-6 hover:bg-[#e3e3e3] p-2 bg-[#41c9e2]">
+                    <div className="border-2 border-[#003c43] dark:border-white border-solid rounded-md rotate-12 hover:rotate-6 hover:bg-[#e3e3e3] p-2 bg-[#41c9e2]">
                         <img src={Linkedin} alt="" className="w-[80px] h-[80px]" />
                     </div>
-                    <div className="border-2 border-[#003c43] border-dashed rounded-md -rotate-6 hover:rotate-6 hover:bg-[#e3e3e3] p-2 bg-[#757575]">
+                    <div className="border-2 border-[#003c43] dark:border-white border-dashed rounded-md -rotate-6 hover:rotate-6 hover:bg-[#e3e3e3] p-2 bg-[#757575]">
                         <img src={Github} alt="" className="w-[80px] h-[80px]" />
                     </div>
                 </div>
@@ -70,9 +70,9 @@ function Footer() {
 
             {/** large devices */}
             <div className="hidden lg:block mx-5">
-                <div className="border-t border-b border-[#003c43] w-full flex items-center justify-center py-8">
+                <div className="border-t border-b border-[#003c43] dark:border-[#757575] w-full flex items-center justify-center py-8">
                     {/** left */}
-                    <div className="border-r-2 border-[#003c43] w-1/2 py-8">
+                    <div className="border-r-2 border-[#003c43] dark:border-[#757575] w-1/2 py-8">
                         <div className="flex flex-col items-center justify-center gap-6">
                             <h2 className="text-xl font-roboto font-medium text-[#333] dark:text-[#e3e3e3]">Let&apos;s connect for discussion</h2>
                             <div className="flex items-center gap-8 font-medium font-mukta">
