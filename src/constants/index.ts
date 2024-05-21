@@ -22,6 +22,11 @@ import Vscode from "../assets/vscode.svg";
 import Vercel from "../assets/vercel.svg";
 import Database from "../assets/database.svg";
 import Mysql from "../assets/mysql.svg";
+import Codex from "../assets/hello-world.webp";
+import Notecraft from "../assets/notecraft.png";
+import LMS from "../assets/lms.webp";
+import Geek from "../assets/geeks.svg";
+import Portfolio from "../assets/portfolio.png";
 
 export const expertise = [
   { icon: Monitor, title: "Software Development", desc: "experienced in object oriented programming: java, javascript, typescript." },
@@ -80,4 +85,37 @@ export const techStacks = [
   { icon: Bootstrap, title: "Bootstrap" },
   { icon: Database, title: "Database" },
   { icon: Express, title: "Express" },
+];
+
+export const items = [
+  {
+    title: "Code-X: Coding Editor/Compiler",
+    description: "An Editor where you can code with 10+ languages and 10+ themes.",
+    header: Codex,
+    tag: "Fullstack",
+  },
+  {
+    title: "EdFlex Learning: A LMS Platform",
+    description: "A learning management system that provides a large and indispensable features tos support teaching and learning.",
+    header: LMS,
+    tag: "Fullstack",
+  },
+  {
+    title: "Modern Portfolio: Next.js with Framer motion",
+    description: "A portfolio using using Next.js along with framer motion using Tailwind CSS.",
+    header: Portfolio,
+    tag: "UI",
+  },
+  {
+    title: "Notecraft, A digital workplace where better, faster work happens",
+    description: "A freemium productivity and note taking web application based on File and Folder structure",
+    header: Notecraft,
+    tag: "Fullstack",
+  },
+  {
+    title: "GeekGazette: A platofrm for sharing your art and skills",
+    description: "GeekGazette is a social networking platform where users can showcase their skills and share it for others.",
+    header: Geek,
+    tag: "Fullstack",
+  }
 ];

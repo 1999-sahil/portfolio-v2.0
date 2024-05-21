@@ -6,9 +6,17 @@ import darkImg from "../../assets/documents-dark.png";
 import { Button } from "../ui/button";
 import { FaLocationArrow, FaRegHandPointDown } from "react-icons/fa";
 import { techStack } from "@/constants/svg";
+import { useNavigate } from "react-router-dom";
 
 
 function Projects() {
+
+  const navigate = useNavigate();
+
+  const handleButtonClick = () => {
+    navigate('/work');
+  };
+
   return (
     <div className="project-section">
       <div className="projects-container flex px-4 gap-4">
@@ -113,7 +121,7 @@ function Projects() {
               {/** featured project */}
               <div className="flex flex-col gap-[1rem] items-center justify-center">
                 <FaRegHandPointDown className="w-8 h-8 text-[#fb4b87]" />
-                <Button variant="outline" className="w-[80%] font-semibold font-roboto">
+                <Button onClick={handleButtonClick} variant="outline" className="w-[80%] font-semibold font-roboto">
                   View All Projects
                 </Button>
               </div>

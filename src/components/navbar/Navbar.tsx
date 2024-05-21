@@ -32,7 +32,7 @@ function Navbar() {
           {Navigation.map((link, index) => {
             return (
                 <div key={index} className="text-[#e3e3e3] px-2 py-1">
-                    <Link to="/" className="font-mukta font-medium text-base">
+                    <Link to={link.to} className="font-mukta font-medium text-base">
                         <h2 className="capitalize">{link.title}</h2>
                     </Link>
                 </div>
