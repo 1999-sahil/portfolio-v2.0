@@ -14,6 +14,8 @@ import TechSkill from "./components/design/TechSkill";
 import LightSVG from "./assets/lightArrow.svg";
 import DarkSVG from "./assets/darkArrow.svg";
 import Footer from "./components/footer/Footer";
+import CardRevealEffect from "./components/cardReveal/CardRevealEffect";
+import { FaCodeBranch } from "react-icons/fa";
 
 function App() {
   const ref = useRef(null);
@@ -134,6 +136,19 @@ function App() {
       {/** skills section */}
       <section className="w-full h-full mb-20">
         <TechSkill />
+      </section>
+
+      {/** my approach card */}
+      <section className="w-full h-full mb-20">
+        <div className="flex items-center justify-center">
+          <h2 className="flex items-center gap-2 text-sky-600 bg-[#b2b377] font-medium whitespace-nowrap font-roboto text-[18px] md:text-[22px] w-fit px-2 py-1 rounded-[.5rem] text-center">
+            <FaCodeBranch />
+            My Approach
+          </h2>
+        </div>
+        <div>
+          <CardRevealEffect />
+        </div>
       </section>
 
       {/** arrow */}

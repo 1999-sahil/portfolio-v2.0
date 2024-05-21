@@ -17,7 +17,7 @@ function Navbar() {
   };
 
   return (
-    <header className="fixed w-full z-10 min-w-[300px] min-h-[4.6rem] bg-[#003c43] dark:bg-[#121212] flex items-center justify-center drop-shadow-md border-b">
+    <header className="fixed w-full z-50 min-w-[300px] min-h-[4.6rem] bg-[#003c43] dark:bg-[#121212] flex items-center justify-center drop-shadow-md border-b">
       <nav className="w-full flex items-center justify-between m-2 lg:px-10 px-3 py-3">
         {/** logo */}
         <Link to="/" className="flex items-center">
