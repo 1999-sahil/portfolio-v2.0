@@ -42,7 +42,7 @@ function Navbar() {
 
         <div className="hidden lg:flex items-center gap-5">
           <ModeToggle />
-          <Link to="/" className="text-sm font-semibold gap-2 bg-white font-mukta rounded-[0.25rem] flex items-center justify-center px-[1.12rem] py-[0.5rem] transition-all ease-out duration-75 text-[#171717]">
+          <Link to="/resume" className="text-sm font-semibold gap-2 hover:opacity-90 bg-white font-mukta rounded-[0.25rem] flex items-center justify-center px-[1.12rem] py-[0.5rem] transition-all ease-out duration-75 text-[#171717]">
             My Resume
             <ArrowRight className="w-4 h-4" />
           </Link>

@@ -145,7 +145,7 @@ function App() {
             <FaCodeBranch />
             My Approach
           </h2>
-          <h2 className="text-center text-[1.62rem] lg:text-[2.5rem] text-[#333] dark:text-[#e3e3e3] leading-8 md:leading-[50px] font-candal font-medium">
+          <h2 className="text-center px-1 text-[1.62rem] lg:text-[2.5rem] text-[#333] dark:text-[#e3e3e3] leading-8 md:leading-[50px] font-candal font-medium">
             Plug and <span className="bg-orange-500 text-[#f5deb3] px-1">play</span> with your workflow
             </h2>
         </div>

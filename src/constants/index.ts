@@ -34,6 +34,12 @@ import DiaDocs from "../assets/diagramdocs.png";
 import DigiLab from "../assets/digilab.png";
 import Xero from "../assets/xero.png";
 import Intelli from "../assets/intelli.png";
+import Npm from "../assets/npm.svg";
+import Figma from "../assets/figma.svg";
+import Netlify from "../assets/netlify.svg";
+import API from "../assets/api.svg";
+import Chrome from "../assets/chrome.svg";
+import Windows from "../assets/windows.svg";
 
 export const expertise = [
   { icon: Monitor, title: "Software Development", desc: "experienced in object oriented programming: java, javascript, typescript." },
@@ -92,6 +98,12 @@ export const techStacks = [
   { icon: Bootstrap, title: "Bootstrap" },
   { icon: Database, title: "Database" },
   { icon: Express, title: "Express" },
+  { icon: Npm, title: "NPM" },
+  { icon: Figma, title: "Figma" },
+  { icon: Netlify, title: "Netlify" },
+  { icon: API, title: "API" },
+  { icon: Chrome, title: "Chrome" },
+  { icon: Windows, title: "Windows" },
 ];
 
 export const items = [

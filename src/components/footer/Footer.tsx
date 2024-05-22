@@ -110,11 +110,11 @@ function Footer() {
                         </h2>
                     </div>
                     <div className="flex items-center justify-between gap-8">
-                        <Link to="" className="flex items-center font-mukta text-base font-medium gap-1">
+                        <Link to={"https://github.com/1999-sahil"} className="flex items-center font-mukta text-base font-medium gap-1">
                             <FaGithub />
                             Github
                         </Link>
-                        <Link to="" className="flex items-center font-mukta text-base font-medium gap-1">
+                        <Link to={"www.linkedin.com/in/sahil-ahmed-86222718a"} className="flex items-center font-mukta text-base font-medium gap-1">
                             <FaLinkedin />
                             Linkedin
                         </Link>

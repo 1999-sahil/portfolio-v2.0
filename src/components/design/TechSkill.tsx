@@ -25,7 +25,7 @@ function TechSkill() {
             {techStacks.map((item, index) => (
                 <div key={index} className="flex flex-col items-center gap-1">
                     <div>
-                        <img src={item.icon} alt={item.icon} className="w-[50px] h-[50px] lg:w-[100px] lg:h-[100px] rounded-md bg-blend-overlay bg-gray-200 dark:bg-[#333] p-2 border border-gray-400" />
+                        <img src={item.icon} alt={item.icon} className="w-[50px] h-[50px] lg:w-[100px] lg:h-[100px] rounded-md bg-blend-overlay bg-gray-200 dark:bg-[#e3e3e3] p-2 border border-gray-400 dark:border-[#757575]" />
                     </div>
                     {/*<div className="text-sm font-bold font-roboto">{item.title}</div>*/}
                 </div>
