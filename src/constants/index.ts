@@ -27,6 +27,13 @@ import Notecraft from "../assets/notecraft.png";
 import LMS from "../assets/lms.webp";
 import Geek from "../assets/geeks.svg";
 import Portfolio from "../assets/portfolio.png";
+import Fibo from "../assets/fibo.png";
+import Weekday from "../assets/weekday.png";
+import Quill from "../assets/quill.png";
+import DiaDocs from "../assets/diagramdocs.png";
+import DigiLab from "../assets/digilab.png";
+import Xero from "../assets/xero.png";
+import Intelli from "../assets/intelli.png";
 
 export const expertise = [
   { icon: Monitor, title: "Software Development", desc: "experienced in object oriented programming: java, javascript, typescript." },
@@ -93,29 +100,83 @@ export const items = [
     description: "An Editor where you can code with 10+ languages and 10+ themes.",
     header: Codex,
     tag: "Fullstack",
+    link: "https://github.com/1999-sahil/code-x-code-editor"
   },
   {
     title: "EdFlex Learning: A LMS Platform",
-    description: "A learning management system that provides a large and indispensable features tos support teaching and learning.",
+    description: "A learning management system that provides a large and indispensable features to support teaching and learning.",
     header: LMS,
     tag: "Fullstack",
+    link: "https://github.com/1999-sahil/edflex_lms"
   },
   {
     title: "Modern Portfolio: Next.js with Framer motion",
     description: "A portfolio using using Next.js along with framer motion using Tailwind CSS.",
     header: Portfolio,
     tag: "UI",
+    link: "https://github.com/1999-sahil/my-portfolio"
   },
   {
     title: "Notecraft, A digital workplace where better, faster work happens",
     description: "A freemium productivity and note taking web application based on File and Folder structure",
     header: Notecraft,
     tag: "Fullstack",
+    link: "https://github.com/1999-sahil/notecraft-nextjs"
   },
   {
     title: "GeekGazette: A platofrm for sharing your art and skills",
     description: "GeekGazette is a social networking platform where users can showcase their skills and share it for others.",
     header: Geek,
     tag: "Fullstack",
-  }
+    link: "https://github.com/1999-sahil/geekgazette-nextjs-app"
+  },
+  {
+    title: "Track/Untrack Mobile Progress Bar",
+    description: "",
+    header: Fibo,
+    tag: "Frontend",
+    link: "https://github.com/1999-sahil/fibo-frontend-assignment"
+  },
+  {
+    title: "Infinite Scrollling with API data",
+    description: "",
+    header: Weekday,
+    tag: "Frontend",
+    link: "https://github.com/1999-sahil/weekday-frontend"
+  },
+  {
+    title: "QuillAudits UI",
+    description: "",
+    header: Quill,
+    tag: "UI",
+    link: "https://github.com/1999-sahil/quillAudits-frontend"
+  },
+  {
+    title: "DiagramDocs: A digital canvas",
+    description: "DiagramDocs provides docs and diagrams platform for engineering teams. DiagramDocs enables developers to create docs and diagrams at the speed of thought ",
+    header: DiaDocs,
+    tag: "Fullstack",
+    link: "https://github.com/1999-sahil/diagramdocs_nextjs-convex"
+  },
+  {
+    title: "Digilabs Admin Panel UI",
+    description: "",
+    header: DigiLab,
+    tag: "Frontend",
+    link: "https://github.com/1999-sahil/digilabs-frontend-round1"
+  },
+  {
+    title: "XeroCode UI",
+    description: "",
+    header: Xero,
+    tag: "UI",
+    link: "https://github.com/1999-sahil/xerocodee-page"
+  },
+  {
+    title: "IntelliTech Courses UI",
+    description: "",
+    header: Intelli,
+    tag: "UI",
+    link: "https://github.com/1999-sahil/intellitech_assessment"
+  },
 ];
