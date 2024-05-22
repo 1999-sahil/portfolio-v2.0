@@ -33,7 +33,7 @@ function App() {
 
   return (
     <main
-      className="overflow-hidden pt-[5rem] bg-[#f5f5b2f3] dark:bg-black gridLinesBackground"
+      className="overflow-hidden pt-[5rem] bg-[#f5f5b2] dark:bg-black gridLinesBackground"
       ref={ref}
     >
       {/** hero section */}
