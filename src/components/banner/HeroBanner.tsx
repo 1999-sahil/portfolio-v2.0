@@ -72,10 +72,10 @@ function HeroBanner() {
 
       {/** get in touch */}
       <div>
-        <button className="text-[16px] font-semibold gap-2 bg-[#333] text-[#e3e3e3] dark:bg-[#e3e3e3] dark:text-[#121212] hover:bg-opacity-90 font-mukta rounded-[0.25rem] flex items-center justify-center px-[1.12rem] py-[0.5rem]">
+        <a href="mailto:sahilahmed466@gmail.com" target="_blank" className="text-[16px] font-semibold gap-2 bg-[#333] text-[#e3e3e3] dark:bg-[#e3e3e3] dark:text-[#121212] hover:bg-opacity-90 font-mukta rounded-[0.25rem] flex items-center justify-center px-[1.12rem] py-[0.5rem]">
             Get in touch
             <ArrowRight className="w-5 h-5" />
-        </button>
+        </a>
       </div>
     </div>
   );

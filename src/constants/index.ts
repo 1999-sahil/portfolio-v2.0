@@ -40,6 +40,8 @@ import Netlify from "../assets/netlify.svg";
 import API from "../assets/api.svg";
 import Chrome from "../assets/chrome.svg";
 import Windows from "../assets/windows.svg";
+import Redux from "../assets/redux.svg";
+import WeatherApp from "../assets/weather-app.png";
 
 export const expertise = [
   { icon: Monitor, title: "Software Development", desc: "experienced in object oriented programming: java, javascript, typescript." },
@@ -104,6 +106,7 @@ export const techStacks = [
   { icon: API, title: "API" },
   { icon: Chrome, title: "Chrome" },
   { icon: Windows, title: "Windows" },
+  { icon: Redux, title: "Redux" },
 ];
 
 export const items = [
@@ -136,7 +139,14 @@ export const items = [
     link: "https://github.com/1999-sahil/notecraft-nextjs"
   },
   {
-    title: "GeekGazette: A platofrm for sharing your art and skills",
+    title: "A Fullstack Weather App using coolest tech",
+    description: "A Weather app using latest tech like Nextjs, React, Tailwind CSS, Openweather API for latest forcasting data.",
+    header: WeatherApp,
+    tag: "Fullstack",
+    link: "",
+  },
+  {
+    title: "GeekGazette: A platform for sharing your art and skills",
     description: "GeekGazette is a social networking platform where users can showcase their skills and share it for others.",
     header: Geek,
     tag: "Fullstack",

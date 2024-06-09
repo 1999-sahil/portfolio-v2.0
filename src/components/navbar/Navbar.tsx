@@ -106,7 +106,7 @@ function Navbar() {
                 })}
 
                 {/** resume-button */}
-                <Link to="/" className="text-xl font-semibold gap-2 bg-white font-mukta rounded-[0.25rem] flex items-center justify-center px-[3rem] py-[0.5rem] transition-all ease-out duration-75 text-[#171717]">
+                <Link to="/resume" className="text-xl font-semibold gap-2 bg-white font-mukta rounded-[0.25rem] flex items-center justify-center px-[3rem] py-[0.5rem] transition-all ease-out duration-75 text-[#171717]">
                   My Resume
                   <ArrowRight className="w-4 h-4" />
                 </Link>
