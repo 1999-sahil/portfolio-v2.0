@@ -42,6 +42,7 @@ import Chrome from "../assets/chrome.svg";
 import Windows from "../assets/windows.svg";
 import Redux from "../assets/redux.svg";
 import WeatherApp from "../assets/weather-app.png";
+import Strife from "../assets/strife.png";
 
 export const expertise = [
   { icon: Monitor, title: "Software Development", desc: "experienced in object oriented programming: java, javascript, typescript." },
@@ -118,9 +119,9 @@ export const items = [
     link: "https://github.com/1999-sahil/code-x-code-editor"
   },
   {
-    title: "EdFlex Learning: A LMS Platform",
-    description: "A learning management system that provides a large and indispensable features to support teaching and learning.",
-    header: LMS,
+    title: "Strife: Group Chat That's all fun",
+    description: "full-stack application and real-time strife app with all servers, channels, video calls, audio calls, editing messages, deleting messages, share images or pdf file, etc.",
+    header: Strife,
     tag: "Fullstack",
     link: "https://github.com/1999-sahil/edflex_lms"
   },
@@ -143,7 +144,14 @@ export const items = [
     description: "A Weather app using latest tech like Nextjs, React, Tailwind CSS, Openweather API for latest forcasting data.",
     header: WeatherApp,
     tag: "Fullstack",
-    link: "",
+    link: "https://github.com/1999-sahil/weather-app-openweatherAPI",
+  },
+  {
+    title: "EdFlex Learning: A LMS Platform",
+    description: "A learning management system that provides a large and indispensable features to support teaching and learning.",
+    header: LMS,
+    tag: "Fullstack",
+    link: "https://github.com/1999-sahil/edflex_lms"
   },
   {
     title: "GeekGazette: A platform for sharing your art and skills",
